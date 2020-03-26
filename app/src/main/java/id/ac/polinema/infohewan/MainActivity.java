@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         GridAdapter adapter = new GridAdapter(this, teams);
         teamsView.setAdapter(adapter);
 
-        RecyclerView.LayoutManager layoutManager = new GridLayoutManager(this, 2);
+        RecyclerView.LayoutManager layoutManager = new GridLayoutManager(this, 1);
         teamsView.setLayoutManager(layoutManager);
     }
 }
