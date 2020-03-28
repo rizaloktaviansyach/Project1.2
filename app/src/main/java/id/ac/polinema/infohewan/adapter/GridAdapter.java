@@ -16,8 +16,8 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
-import id.ac.polinema.infohewan.DaftarActivity;
 import id.ac.polinema.infohewan.R;
+import id.ac.polinema.infohewan.TampilanActivity;
 import id.ac.polinema.infohewan.model.GambarHewan;
 
 public class GridAdapter extends RecyclerView.Adapter<GridAdapter.ViewHolder> {
@@ -43,7 +43,7 @@ public class GridAdapter extends RecyclerView.Adapter<GridAdapter.ViewHolder> {
         holder.parent_layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(context, DaftarActivity.class);
+                Intent intent = new Intent(context, TampilanActivity.class);
                 intent.putExtra("image_url", item.getImage());
                 intent.putExtra("image_name", item.getName());
                 context.startActivity(intent);
