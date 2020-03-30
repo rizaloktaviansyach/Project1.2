@@ -16,8 +16,21 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void handleDaftar(View view) {
+    public void Detail1(View view) {
+        //link ke DaftarActivity
         Intent intent = new Intent(this, DaftarActivity.class);
         startActivity(intent);
+    }
+
+    public void Detail2(View view) {
+        //link ke Daftar2Activity
+    }
+
+    public void Detail3(View view) {
+        //link ke Daftar3Activity
+    }
+
+    public void Detail4(View view) {
+        //link ke Daftar4Activity
     }
 }

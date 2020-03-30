@@ -1,7 +1,6 @@
 package id.ac.polinema.infohewan.adapter;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,7 +14,6 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
-import id.ac.polinema.infohewan.DaftarActivity;
 import id.ac.polinema.infohewan.R;
 import id.ac.polinema.infohewan.model.GambarHewan;
 
@@ -40,15 +38,6 @@ public class DaftarAdapter extends RecyclerView.Adapter<DaftarAdapter.ViewHolder
     public void onBindViewHolder(@NonNull DaftarAdapter.ViewHolder holder, int position) {
         final GambarHewan item = items.get(position);
         holder.nameText.setText(item.getName());
-//        holder.parent_layout.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(context, DaftarActivity.class);
-//                intent.putExtra("image_url", item.getImage());
-//                intent.putExtra("image_name", item.getName());
-//                context.startActivity(intent);
-//            }
-//        });
         Picasso.get().load(item.getImage()).into(holder.imgImage);
     }
 
