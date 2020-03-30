@@ -1,8 +1,6 @@
 package id.ac.polinema.infohewan;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -11,7 +9,6 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-import id.ac.polinema.infohewan.adapter.TampilanAdapter;
 import id.ac.polinema.infohewan.model.GambarHewan;
 
 public class TampilanActivity extends AppCompatActivity {
