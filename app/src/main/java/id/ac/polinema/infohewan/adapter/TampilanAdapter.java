@@ -17,25 +17,25 @@ import java.util.List;
 import id.ac.polinema.infohewan.R;
 import id.ac.polinema.infohewan.model.GambarHewan;
 
-public class DaftarAdapter extends RecyclerView.Adapter<DaftarAdapter.ViewHolder> {
+public class TampilanAdapter extends RecyclerView.Adapter<TampilanAdapter.ViewHolder> {
     private Context context;
     private List<GambarHewan> items;
 
-    public DaftarAdapter(Context context, List<GambarHewan> items) {
+    public TampilanAdapter(Context context, List<GambarHewan> items) {
         this.context = context;
         this.items = items;
     }
 
     @NonNull
     @Override
-    public DaftarAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public TampilanAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(context)
                 .inflate(R.layout.item_grid, parent, false);
-        return new DaftarAdapter.ViewHolder(view);
+        return new TampilanAdapter.ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull DaftarAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull TampilanAdapter.ViewHolder holder, int position) {
         final GambarHewan item = items.get(position);
         holder.nameText.setText(item.getName());
         Picasso.get().load(item.getImage()).into(holder.imgImage);

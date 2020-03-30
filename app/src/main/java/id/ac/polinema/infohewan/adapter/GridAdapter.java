@@ -46,6 +46,7 @@ public class GridAdapter extends RecyclerView.Adapter<GridAdapter.ViewHolder> {
                 Intent intent = new Intent(context, TampilanActivity.class);
                 intent.putExtra("image_url", item.getImage());
                 intent.putExtra("image_name", item.getName());
+                intent.putExtra("image_desc", item.getDescription());
                 context.startActivity(intent);
             }
         });

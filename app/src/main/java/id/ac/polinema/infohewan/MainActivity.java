@@ -24,13 +24,19 @@ public class MainActivity extends AppCompatActivity {
 
     public void Detail2(View view) {
         //link ke Daftar2Activity
+        Intent intent = new Intent(this, Daftar2Activity.class);
+        startActivity(intent);
     }
 
     public void Detail3(View view) {
         //link ke Daftar3Activity
+        Intent intent = new Intent(this, Daftar3Activity.class);
+        startActivity(intent);
     }
 
     public void Detail4(View view) {
         //link ke Daftar4Activity
+        Intent intent = new Intent(this, Daftar4Activity.class);
+        startActivity(intent);
     }
 }

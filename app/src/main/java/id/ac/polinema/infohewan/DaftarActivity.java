@@ -22,8 +22,8 @@ public class DaftarActivity extends AppCompatActivity {
         RecyclerView teamsView = findViewById(R.id.rv_teams);
 
         List<GambarHewan> teams = new ArrayList<>();
-        teams.add(new GambarHewan("https://upload.wikimedia.org/wikipedia/commons/0/0c/Cow_female_black_white.jpg", "Mamalia"));
-        teams.add(new GambarHewan("https://upload.wikimedia.org/wikipedia/commons/8/84/Schoenechse.jpg", "Reptil"));
+        teams.add(new GambarHewan("@drawable/harimausumatera.jpg", "Harimau Sumatera", "Harimau Sumatera tinggal di Sumatera"));
+        teams.add(new GambarHewan("https://upload.wikimedia.org/wikipedia/commons/8/84/Schoenechse.jpg", "Reptil", ""));
 
         GridAdapter adapter = new GridAdapter(this, teams);
         teamsView.setAdapter(adapter);

@@ -1,11 +1,20 @@
 package id.ac.polinema.infohewan.model;
 
 public class GambarHewan {
-    private String image, name;
+    private String image, name, description;
 
-    public GambarHewan(String image, String name) {
+    public GambarHewan(String image, String name, String description) {
         this.image = image;
         this.name = name;
+        this.description = description;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public String getImage() {

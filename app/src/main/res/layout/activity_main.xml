@@ -34,16 +34,18 @@
 
                     android:layout_width="match_parent"
                     android:layout_height="145dp"
-                    app:srcCompat="@drawable/ic_launcher_background" />
+                    android:background="@drawable/cheetah" />
 
                 <TextView
                     android:id="@+id/textJenisHwn1"
-                    android:layout_width="380dp"
+                    android:layout_width="372dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Mamalia"
+                    android:layout_marginEnd="8dp"
+                    android:background="#90FFFFFF"
+                    android:text="Hewan Liar"
                     android:textAlignment="center"
-                    android:textSize="20dp"/>
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -70,16 +72,18 @@
 
                     android:layout_width="match_parent"
                     android:layout_height="145dp"
-                    app:srcCompat="@drawable/ic_launcher_background" />
+                    android:background="@drawable/hiupausshutterstock" />
 
                 <TextView
                     android:id="@+id/textJenisHwn2"
-                    android:layout_width="380dp"
+                    android:layout_width="372dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Jenis Hewan"
+                    android:layout_marginEnd="8dp"
+                    android:background="#90FFFFFF"
+                    android:text="Hewan Laut"
                     android:textAlignment="center"
-                    android:textSize="20dp"/>
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -106,16 +110,18 @@
 
                     android:layout_width="match_parent"
                     android:layout_height="145dp"
-                    app:srcCompat="@drawable/ic_launcher_background" />
+                    android:background="@drawable/jangkrekbos" />
 
                 <TextView
                     android:id="@+id/textJenisHwn3"
-                    android:layout_width="380dp"
+                    android:layout_width="372dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Jenis Hewan"
+                    android:layout_marginEnd="8dp"
+                    android:background="#90FFFFFF"
+                    android:text="Serangga"
                     android:textAlignment="center"
-                    android:textSize="20dp"/>
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -142,16 +148,18 @@
 
                     android:layout_width="match_parent"
                     android:layout_height="145dp"
-                    app:srcCompat="@drawable/ic_launcher_background" />
+                    android:background="@drawable/rainbowlizard" />
 
                 <TextView
                     android:id="@+id/textJenisHwn4"
-                    android:layout_width="380dp"
+                    android:layout_width="372dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Jenis Hewan"
+                    android:layout_marginEnd="8dp"
+                    android:background="#90FFFFFF"
+                    android:text="Reptil"
                     android:textAlignment="center"
-                    android:textSize="20dp"/>
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
