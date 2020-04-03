@@ -4,7 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,16 +29,17 @@ public class TampilanActivity extends AppCompatActivity {
 
         if(getIntent().hasExtra("image_url") && getIntent().hasExtra("image_name")){
             Log.d(TAG, "getIncomingIntent: found intent extras.");
-
+            String imageUrl = getIntent().getStringExtra("image_url");
             String imageName = getIntent().getStringExtra("image_name");
             String imageDescription = getIntent().getStringExtra("image_desc");
-            setImage(imageName,imageDescription);
+            setImage(imageUrl,imageName,imageDescription);
         }
     }
 
-    private void setImage(String imageName, String imageDescription){
+    private void setImage(String imageUrl,String imageName, String imageDescription){
         Log.d(TAG, "setImage: setting te image and name to widgets.");
-
+        ImageView image = findViewById(R.id.image);
+        Glide.with(this).asBitmap().load(imageUrl).into(image);
         TextView name = findViewById(R.id.titleText);
         TextView desc = findViewById(R.id.textDeskripsi);
         desc.setText(imageDescription);

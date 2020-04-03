@@ -12,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -50,7 +51,7 @@ public class GridAdapter extends RecyclerView.Adapter<GridAdapter.ViewHolder> {
                 context.startActivity(intent);
             }
         });
-        Picasso.get().load(item.getImage()).into(holder.imgImage);
+        Glide.with(context).load(item.getImage()).into(holder.imgImage);
     }
 
     @Override
